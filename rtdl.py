@@ -1,12 +1,9 @@
 '''
 # Release: alpha
 # 
-# Author: Michael Klym
+# Author: Michael K
 # GitHub: @EmbersAtDawn
 # 
-# Date Created:  December 01, 2019
-# Last Modified: June 01, 2020
-#
 '''
 
 #--------------------------------------------------------IMPORT STATEMENTS--------------------------------------------------------#
