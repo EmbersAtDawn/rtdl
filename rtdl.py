@@ -1,8 +1,7 @@
 '''
 # Release: alpha
 # 
-# Author: Michael K
-# GitHub: @EmbersAtDawn
+# Project Page: https://github.com/EmbersAtDawn/rtdl
 # 
 '''
 
