@@ -1,11 +1,11 @@
 # rtdl
 
 ## Requirements
-### PATH .exes (build)
+### PATH .exes
 * ffmpeg.exe
 * geckdriver.exe
 
-### Libraries (pip)
+### Libraries
 * os
 * time
 * requests
