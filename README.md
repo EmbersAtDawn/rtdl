@@ -2,8 +2,8 @@
 
 ## Requirements
 ### PATH .exes
-* ffmpeg.exe
-* geckdriver.exe
+* [ffmpeg.exe](https://github.com/BtbN/FFmpeg-Builds/releases)
+* [geckdriver.exe](https://github.com/mozilla/geckodriver/releases)
 
 ### Libraries
 * os
