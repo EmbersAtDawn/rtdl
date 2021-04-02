@@ -5,6 +5,11 @@
 #  Current ToDo: Find better way to quit cleanly (line 130)
 # 
 '''
+# Case: wrong file run
+if __name__ == '__main__':
+    print('Please run rtdl.py instead.\n')
+    input('Press ENTER to exit . . .')
+    quit()
 #------------------------------------------------------------IMPORT STATEMENTS------------------------------------------------------------#
 import os
 import textwrap

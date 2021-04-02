@@ -5,6 +5,11 @@
 #  Current ToDo: 
 # 
 '''
+# Case: wrong file run
+if __name__ == '__main__':
+    print('Please run rtdl.py instead.\n')
+    input('Press ENTER to exit . . .')
+    quit()
 #------------------------------------------------------------IMPORT STATEMENTS------------------------------------------------------------#
 from system import display_wait_message
 import requests
