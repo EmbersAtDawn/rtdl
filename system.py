@@ -171,18 +171,32 @@ def create_save_path(show_title, season_number):
 
 
 #-------------------------------------------------------------PROGRAM CALLS---------------------------------------------------------------#
+def in_sys_path(find_me):
+    '''
+    Return: True / False
+    Checks System PATH for string 'file' (file must include extension e.g. ffmpeg.exe)
+    '''
+    sys_path = os.getenv("PATH").split(';')
+    for path in sys_path:
+        if os.path.isfile(os.path.join(path,find_me)):
+            return True
+    return False
+
 def ffmpeg_present():
     '''
     Return: True / False
+    If located, prints message for where
+    If not located, advises what to do    
     '''
-
-    ffmpeg_path = os.path.join('C:\\', 'FFmpeg', 'bin', 'ffmpeg.exe')
-    ffmpeg_path2 = os.path.join('C:\\', 'bin', 'ffmpeg.exe')
-    if ( os.path.exists(ffmpeg_path) or (os.path.exists(ffmpeg_path2)) ):
-        print('Yay, FFmpeg is installed and we can get going!!\n')
+    if (os.path.exists('ffmpeg.exe')):
+        print('ffmpeg located in local directory.\n')
+        return True
+    elif in_sys_path('ffmpeg.exe'):
+        print('ffmpeg located in System PATH\n')
         return True
     else:
-        print("You'll need to get FFmpeg installed first. :/\n")
+        print('ffmpeg.exe was not found.')
+        print('Please download an ffmpeg.exe build and place in the same directory as rtdl.py or add it to the System PATH.\n')
         return False
 
 def run_ffmpeg(episode, save_path):
